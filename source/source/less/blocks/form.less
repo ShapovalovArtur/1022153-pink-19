@@ -1,0 +1,100 @@
+.form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.form__title {
+  .intro-font;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  margin: 0 auto;
+  min-height: 110px;//grid-temp
+  padding-top: 100px;
+  padding-bottom: 30px;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+.form__title,
+.form__subtitle {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.form__subtitle {
+  padding-top: 46px;
+  .subtitle-font;
+  padding-bottom: 30px;
+}
+
+.form__subtitle--short {
+  display: none;
+}
+
+@media (min-width: @tabletwidth) {
+  .form {
+    width: 660px;
+    min-height: 2740px;//grid-temp
+  }
+
+  .form__title {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    padding-top: 175px;
+    padding-bottom: 60px;
+    font-size: 50px;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 1197px auto;
+    }
+  }
+
+  .form__subtitle {
+    padding-top: 93px;
+    font-size: 18px;
+    line-height: 1.67;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .form__subtitle--short {
+    display: block;
+  }
+}
+
+@media (min-width: @desktopwidth) {
+  .form {
+    width: 1200px;
+    min-height: 1770px;//grid-temp
+  }
+
+  .form__title {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 83px;
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: center 0%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+      background-size: 2550px auto;
+    }
+  }
+
+  .form__subtitle {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+
+  .form__subtitle--short {
+    display: inline;
+  }
+}
