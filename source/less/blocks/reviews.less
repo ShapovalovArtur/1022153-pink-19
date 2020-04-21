@@ -16,7 +16,35 @@
   font-style: normal;
 }
 
+.reviews__author-subtitle {
+  display: none;
+}
+
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: @tabletwidth) {
+  .reviews {
+    width: 660px;
+  }
+
+  .reviews__author-name {
+    order: 1;
+  }
+
+  .reviews__author-subtitle {
+    display: block;
+    order:  2;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__text {
+    order: 0;
+  }
 }
