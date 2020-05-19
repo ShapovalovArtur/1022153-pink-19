@@ -1,9 +1,9 @@
 .slider__toggle {
   color: transparent;
-  outline: none;
+
   border: none;
   font-size: 0;
-  margin-right: 15px;
+  margin-right: 8px;
 }
 
 .slider__toggle::before {
@@ -11,7 +11,19 @@
   content: "";
   width: 6px;
   height: 6px;
-  border: 1px red dashed;
   border-radius: 50%;
   background-color: #bec2c7;
+}
+
+.slider__toggle--current::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: @white;
+  border: 3px black solid;
+  margin-top: -3px;
+  margin-left: -3px;
+
 }
