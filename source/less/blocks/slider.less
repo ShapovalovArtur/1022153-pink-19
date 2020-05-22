@@ -1,6 +1,5 @@
 .slider__toggle {
   color: transparent;
-
   border: none;
   font-size: 0;
   margin-right: 8px;
@@ -25,5 +24,23 @@
   border: 3px black solid;
   margin-top: -3px;
   margin-left: -3px;
+}
+
+@media (min-width: @desktopwidth) {
+  .slider__toggle {
+    //color: transparent;
+    //border: none;
+    font-size: 10px;
+    //margin-right: 8px;
+    background-color: @white;
+    width: 22px;
+    height: 42px;
+    position: absolute;
+  }
+
+  .slider__toggle--left {
+    margin-left: -470px;
+    margin-top: -182px;
+  }
 
 }
