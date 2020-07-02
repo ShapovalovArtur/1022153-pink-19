@@ -52,12 +52,20 @@
 }
 
 @media (min-width: @desktopwidth) {
+  .page-header__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .page-header {
     flex-direction: row;
     justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0,0, 0.3);
   }
 
-  .page-header__logo {
+    .page-header__logo {
     height: 110px;
     width: 230px;
     background-color: unset;
