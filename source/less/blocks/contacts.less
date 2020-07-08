@@ -51,7 +51,7 @@
 @media (min-width: @tabletwidth) {
   .contacts {
     width: 660px;
-    background-image:  url("../../img/bg-triangle-white-footer.svg"), url("..//..//img/bg-map-tablet@1x.jpg");
+    background-image:  url("../../img/bg-triangle-white-footer.svg"), url("..//..//img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 57%, center;
   }
@@ -74,6 +74,17 @@
 
 @media (min-width: @desktopwidth) {
   .contacts {
-    min-height: 1573px; //temp
+    width: 1200px;
+    background-position: center 35%, center;
+    background-size: 170%, auto;
+    min-height: 900px;
+  }
+
+  .contacts__title {
+    padding-top: 20px;
+    padding-left: 320px;
+    padding-right:320px;
+    font-size: 50px;
+
   }
 }
