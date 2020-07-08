@@ -36,16 +36,27 @@
   display: none;
 }
 
-.form__name {
+.form__name, .form__achieve, .form__contacts, .form__aplication {
   border: none;
+}
+.form__achieve, .form__aplication {
+  background-color: @lightGrey;
+}
+
+.form__text-label {
+  color: @lipstick;
+  font-size: 14px;
+}
+
+.form__achieve .form__text-label {
+  font-size: 18px;
+  margin-right: auto;
 }
 
 .form__name .form__text-label {
   display: block;
   margin-left: 43px;
   text-transform: uppercase;
-  color: @lipstick;
-  font-size: 14px;;
   margin-bottom: 16px;
 }
 
@@ -55,6 +66,10 @@
   height: 60px;
   margin-bottom: 35px;
   border: 2px solid #e5e5e5;;
+}
+
+.form__achieve {
+  margin: 0 auto;
 }
 
 @media (min-width: @tabletwidth) {
