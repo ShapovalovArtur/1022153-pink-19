@@ -48,12 +48,8 @@
   font-size: 14px;
 }
 
-.form__achieve .form__text-label {
-  font-size: 18px;
-  margin-right: auto;
-}
-
 .form__name .form__text-label {
+  padding: 0;
   display: block;
   margin-left: 43px;
   text-transform: uppercase;
@@ -68,8 +64,45 @@
   border: 2px solid #e5e5e5;;
 }
 
-.form__achieve {
+.form__achieve,
+.form__contacts,
+.form__aplication {
+  position: relative;
   margin: 0 auto;
+  padding: 0;
+}
+
+.form__achieve {
+  padding-top: 115px;
+}
+
+.form__achieve .form__text-label {
+  font-size: 18px;
+  display: block;
+  color: @dark;
+  padding-left: 90px;
+  margin-bottom: 60px;
+}
+
+.form__achieve .form__legend {
+  color: @lipstick;
+  position: absolute;
+  text-align: center;
+  width: 220px;
+  top: 40px;
+  left: 20%;
+}
+
+.form__contacts {
+  padding-top: 43px;;
+}
+
+.form__contacts .form__legend {
+  display: none;
+}
+
+.form__contacts .form__text-label {
+  margin-left: 43px;
 }
 
 @media (min-width: @tabletwidth) {
