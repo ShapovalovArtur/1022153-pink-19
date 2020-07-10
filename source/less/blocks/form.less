@@ -39,6 +39,7 @@
 .form__name, .form__achieve, .form__contacts, .form__aplication {
   border: none;
 }
+
 .form__achieve, .form__aplication {
   background-color: @lightGrey;
 }
@@ -61,7 +62,6 @@
   width: 276px;
   height: 60px;
   margin-bottom: 35px;
-  border: 2px solid #e5e5e5;;
 }
 
 .form__achieve,
@@ -246,6 +246,58 @@
   .form__subtitle--short {
     display: block;
   }
+
+  .form__name {
+    padding-left: 22px;
+    padding-right: 22px;
+    text-align: right;
+  }
+
+  .form__name .form__text-label {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .form__text-field {
+    min-width: 500px;
+  }
+
+  .form__achieve-input:checked + .form__text-label::after {
+    left: 43px;
+  }
+
+.form__aplication .form__legend,
+.form__achieve .form__legend {
+  position: initial;
+}
+
+.form__achieve, .form__aplication, .form__contacts {
+  background-color: @white;
+  border: 2px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.form__radio-field:checked + .form__radio-label::after {
+  left: 43px;
+}
+.form__contacts .form__legend {
+  display: block;
+  color: @lipstick;
+  margin: 0 auto;
+}
+
+.form__contacts .form__text-label {
+  margin: 0;
+}
+
+.form__contacts {
+  padding: 0;
+}
+
+.form__contacts .form__text-field  {
+  margin: 0;
+}
+
 }
 
 @media (min-width: @desktopwidth) {
