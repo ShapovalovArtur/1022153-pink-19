@@ -280,6 +280,7 @@
 .form__radio-field:checked + .form__radio-label::after {
   left: 43px;
 }
+
 .form__contacts .form__legend {
   display: block;
   color: @lipstick;
@@ -298,7 +299,6 @@
 }
 
 .form__contacts .form__text-field  {
-  margin: 0;
   margin-left: 60px;
   margin-bottom: 40px;
 }
@@ -312,7 +312,6 @@
 @media (min-width: @desktopwidth) {
   .form {
     width: 1200px;
-    min-height: 1770px;//grid-temp
   }
 
   .form__title {
@@ -338,13 +337,77 @@
     display: inline;
   }
 
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .form__name {
     width: 460px;
     display: inline-block;
     text-align: left;
+    order: 0;
+    margin-top: 50px;
+  }
+
+  .form__aplication {
+    order: 1;
+    width: 430px;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .form__contacts {
+    order: 2;
+    width: 1060px;
+  }
+
+  .form__achieve {
+    order: 3;
+  }
+
+  .form__notes {
+  order: 4;
+  }
+
+  .form__button,
+  .form__emotions,
+  .form__emotions-label {
+    display: none;
+  }
+
+  .form__name-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .form__name .form__text-field {
     min-width: 330px;
+  }
+
+  .form__radio-field:checked + .form__radio-label::after {
+  left: 33px;
+}
+
+  .form__contacts .form__text-label {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  .form__contacts .form__text-field {
+    margin-left: 10px;
+    min-width: unset;
+  }
+
+  .form__text-field--phone {
+    width: 200px;
+    margin-right: 160px;
+  }
+
+  .form__text-field--letter {
+    width: 240px;
   }
 }
